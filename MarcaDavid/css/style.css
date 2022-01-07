@@ -1,0 +1,943 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+*, *:before, *:after{
+  -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+  background: #212534;
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/********* STAR HEADER *********/
+#container{ 
+  width: 100%;
+  height: 36vh;
+  display: flex;
+  background:#03e8f47e;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+
+  border-radius: 0 0 0 100px;
+  transition: all 0.3s ease;
+  background:#03e9f4;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #4a4a4a45;
+}
+.cabecera{
+  width: 36%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin-left: 30px;
+  margin-top: 20px;
+  
+}
+.textLogo { 
+  width: 337px;
+  height: 52px;
+	background-image:url(/img/logotexto1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logoText{
+  width: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-right: 83px;
+  justify-content: space-around;
+}
+.logo { 
+	width:123px;
+	height:203px;
+	background-image:url(/img/davidMonk2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/* inicio responsive */
+@media screen and (max-width: 768px) {
+  #container{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    border-radius: 0;
+
+  }
+  .cabecera{
+  display: none;
+  }
+  .textLogo { 
+    display: none;
+  }
+  .logoText{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo { 
+    width:106px;
+    height:160px;
+    background-image:url(/img/davidMonk1.png);
+    
+  }
+}
+/* end responsive */
+  
+/********* END HEADER *********/
+
+
+/********* START CONTAINER TWO *********/
+#containerTwo { 
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.subTitle1 {
+  width: 33%;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  margin-left:30px;
+}
+p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 19px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.containerHex {
+  width: 100%;
+  margin: 50px 90px;
+  text-align: center;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border-radius: 9px;
+  padding: 19% 30px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+	box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	7px 7px 20px 0px rgba(0,0,0,.1),
+	4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+/********* END CONTAINER TWO *********/ 
+
+
+
+/********* START CONTAINER THREE *********/
+#containerThree {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.containerRgba{
+  width: 100%;
+  margin: -130px 100px;
+}
+.colorRgba {
+  font-weight: 300;
+  font-size: 19px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left:-35% ;
+}
+/********* END CONTAINER THREE *********/
+
+
+
+/********* START BOTTON NÚMERO 1 *********/
+.btn-1 {
+	background:#010201;
+  width: 160px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.btn-1 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-1:before,
+.btn-1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #010201;
+  transition: all 0.3s ease;
+}
+.btn-1:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1:hover{
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn-1:hover:before {
+  height: 100%;
+}
+.btn-1:hover:after {
+  width: 100%;
+}
+.btn-1 span:hover{
+  color: 010201;
+}
+.btn-1 span:before,
+.btn-1 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #010201;
+  transition: all 0.3s ease;
+}
+.btn-1 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-1 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1 span:hover:before {
+  height: 100%;
+}
+.btn-1 span:hover:after {
+  width: 100%;
+}
+/********* END BOTTON NÚMERO 1 *********/
+
+
+/********* START BOTTON NÚMERO 2 *********/
+.btn-2 {
+  background:#C4C4C4;
+  width: 160px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.btn-2 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-2:before,
+.btn-2:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #C4C4C4;
+  transition: all 0.3s ease;
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2:hover{
+  background: transparent;
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #C4C4C4;
+}
+.btn-2:hover:before {
+  height: 100%;
+}
+.btn-2:hover:after {
+  width: 100%;
+}
+.btn-2 span:hover{
+  color: 010201;
+}
+.btn-2 span:before,
+.btn-2 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #C4C4C4;
+  transition: all 0.3s ease;
+}
+.btn-2 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-2 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2 span:hover:before {
+  height: 100%;
+}
+.btn-2 span:hover:after {
+  width: 100%;
+}
+/********* END BOTTON NÚMERO 2 *********/
+
+
+/********* START BOTTON NÚMERO 3 *********/
+.btn-3 {
+  background:#CB2344;
+  width: 160px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #CB2344;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+  background: transparent;
+  box-shadow: none;
+  color: #CB2344;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+  color: 010201;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #CB2344;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+/********* END BOTTON NÚMERO 3 *********/
+
+
+/********* START BOTTON NÚMERO 4 *********/
+.btn-4 {
+  background:#32D5D4;
+  width: 160px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #32D5D4;
+  transition: all 0.3s ease;
+}
+.btn-4:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-4:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-4:hover{
+  background: transparent;
+  box-shadow: none;
+  color: #32D5D4;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn-4:hover:before {
+  height: 100%;
+}
+.btn-4:hover:after {
+  width: 100%;
+}
+.btn-4 span:hover{
+  color: 010201;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #32D5D4;
+  transition: all 0.3s ease;
+}
+.btn-4 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-4 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-4 span:hover:before {
+  height: 100%;
+}
+.btn-4 span:hover:after {
+  width: 100%;
+}
+/********* END BOTTON NÚMERO 4 *********/
+
+/********* STAR PALETA DE COLORES RESPONSIVE  *********/
+@media screen and (max-width: 768px) {
+  .subTitle1 {
+    width: 60%;
+    margin-top: -50px;
+    margin-bottom: -6%;
+    font-size: 19px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #containerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  #containerThree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerRgba{
+    margin-top: -70%;
+    padding:0 7px;
+  }
+  .colorHex{
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+    font-size: 19px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .colorRgba{
+    font-weight: 300;
+    margin-left: 10px;
+    justify-content: center;
+    font-size: 19px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+}
+/********* END PALETA DE COLORES RESPONSIVE  *********/
+
+
+
+/********* START VARIACION LOGO *********/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+:root {
+  --card-height: 50vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+.containerFour{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top: 10%;
+}
+.subTitle2 {
+  margin-left:76%;
+  margin-top: 60px;
+  margin-bottom: -6%;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+}
+.logo1 { 
+	background-image:url(../img/davidMonnk1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logo2 { 
+	background-image:url(/img/davidMonkText.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logo3 { 
+	background-image:url(/img/davidMonk3.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+
+/* start responsive */
+@media screen and (max-width: 768px) {
+  .containerFour{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .subTitle2 {
+    width: 70%;
+    font-size: 19px;
+    padding-bottom: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: calc(var(--card-width) / 1.5);
+    height: calc(var(--card-height) / 1.5);
+    padding: 3px;
+    position: relative;
+    border-radius: 9px;
+    display: flex;
+    justify-content:space-between;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+  }
+  .logo2 { 
+    background-image: url(/img/davidMonk3.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+  .logo3 {
+    background-image:url(/img/davidMonkText.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: inherit;
+  }
+}
+/* end responsive */
+/********* END VARIACION LOGO *********/
+
+
+/********* START TIPOGRAFIA  *********/
+#containerFive{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.subTitle3 {
+  width: 18%;
+  margin-left: 41%;
+  margin-top: 10%;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  flex-direction: row;
+}
+.containerAbc{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.textEstilos{
+  width: 23%;
+  height: 100%;
+  margin-left: 9%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.textEstilos1, .textEstilos2{
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.textNombre{ 
+  width: 20%;
+  margin-right: 10.5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.textNombre1, .textNombre2{
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.textAbcdario{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.abc{
+  color: #fff;
+}
+
+/* start responsive */
+@media screen and (max-width: 768px) {
+  .containerAbc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+  .textEstilos{
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .textEstilos1, .textEstilos2{
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  .textNombre{ 
+    width: 100%;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .textNombre1, .textNombre2{
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  .textAbcdario{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .abc{
+    color: #fff;
+    font-size: 13px;
+  }
+  
+}
+/* end responsive */
+/********* END TIPOGRAFIA  *********/
+
+/********* START FORMA INCORRECTA *********/
+.containerSix{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top: 10%;
+}
+.subTitle4{
+  margin-left:2.5%;
+  margin-top: 10%;
+  margin-bottom: -6%;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.logoIncorrecto1 { 
+	background-image:url(/img/logoIncorrecto1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logoIncorrecto2 { 
+	background-image:url(/img/logoIncorrecto2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logoIncorrecto3 { 
+	background-image:url(/img/logoincorrecto3.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+/* start responsive */
+@media screen and (max-width: 768px) {
+  .containerSix{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .subTitle4 {
+    width: 70%;
+    font-size: 19px;
+    padding-bottom: 20px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: calc(var(--card-width) / 1.5);
+    height: calc(var(--card-height) / 1.5);
+    padding: 3px;
+    position: relative;
+    border-radius: 9px;
+    display: flex;
+    justify-content:space-between;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+  }
+  .logoIncorrecto2 { 
+    background-image: url(/img/logoIncorrecto2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+  .logoIncorrecto3 {
+    background-image:url(/img/logoincorrecto3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: inherit;
+  }
+}
+/* end responsive */
+/********* END FORMA INCORRECTA *********/
+
+
+/********* START FOOTER  *********/
+#containerFooter{
+  width: 100%;
+  height: 30vh;
+  margin-top: 10%;
+  display: flex;
+  background:#03e8f47e;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+
+  border-radius: 0 100px 0 0;
+  transition: all 0.3s ease;
+  background:#03e9f4;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #4a4a4a45;
+}
+.logoEducamas { 
+  width: 50%;
+  height: 70%;
+  margin-top: 40%;
+	background-image:url(/img/logoEducamas.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.logoFooter { 
+	width:123px;
+	height:180px;
+	background-image:url(/img/davidMonk3.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/* inicio responsive */
+@media screen and (max-width: 768px) {
+  #containerFooter{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    border-radius: 0;
+
+  }
+  .cabecera{
+  display: none;
+  }
+  .textLogo { 
+    display: none;
+  }
+  .logoText{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo { 
+    width:106px;
+    height:160px;
+    background-image:url(/img/davidMonk1.png);
+    
+  }
+}
+/* end responsive */
+/********* END FOOTER  *********/
