@@ -27,4 +27,4 @@ https://davidmonk.herokuapp.com/
 
 - 🎓 &nbsp; Soy Aprendiz en formación de EDUCAMÁS 
 
-- 🎓 &nbsp; Soy Tecnólogo en análisis y desarrollo de sistemas de información del SENA 
+- 🎓 &nbsp; Soy Tecnólogo en Análisis y Desarrollo de Sistemas de Información (ADSI) del SENA 
