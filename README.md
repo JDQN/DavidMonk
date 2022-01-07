@@ -20,7 +20,7 @@ https://davidmonk.herokuapp.com/
 
 - ✍️ &nbsp; <h3>Bootstrap</h3> https://getbootstrap.com/.
 
-<h2>🛠 Tecnologias utilizadas para este projecto 🛠</h2>
+<h2>🛠 Tecnologías utilizadas para este proyecto 🛠</h2>
 
 - 🌐 &nbsp; HTML5 | CSS3 | Bootstrap | Normalize | Flexbox
 
