@@ -20,10 +20,11 @@ https://davidmonk.herokuapp.com/
 
 - ✍️ &nbsp; <h3>Bootstrap</h3> https://getbootstrap.com/.
 
+
 <h2>🛠 Tecnologías utilizadas para este proyecto 🛠</h2>
 
 - 🌐 &nbsp; HTML5 | CSS3 | Bootstrap | Normalize | Flexbox
 
 - 🎓 &nbsp; Soy Aprendiz en formación de EDUCAMÁS 
-- 
+
 - 🎓 &nbsp; Soy Tecnólogo en análisis y desarrollo de sistemas de información del SENA 
